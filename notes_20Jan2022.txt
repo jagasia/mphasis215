@@ -1,0 +1,71 @@
+Lab setup for Angular:
+------------
+
+i) node js	(download node js) and install it your PC		You will get npm
+ii) couple of commands to execute to install
+	typescript
+	angular
+iii) download and install visual studio code	(vs code) is absolutely free of cost	(NOT visual studio)
+
+You all have completed these steps.
+-------------------------------------------
+
+Lets start with Angular
+-------------------------
+create an angular project:
+i) ng new first-angular-project --style=css --routing
+
+	create a folder structure
+		by default a modue will be there
+			app		(module)
+		inside that app module, there will be a component also created by default
+			AppComponent
+	
+For every component, what are the files created?
+		app.component.html			(template)
+		app.component.ts			(code)
+		app.component.css			(style)
+		app.component.spec.ts			(test cases		karma-jasmine)
+
+
+For every component, there is a selector and it is defined in the .ts file
+wherever you want to plug this component, you have to use the selector.
+
+index.html
+	under <body>
+		this app component is plugged
+		<app-root><app-root>
+
+
+How to run and test an angular project locally?
+	ng serve -o
+
+once you add the bootstrap cdn (or jquery cdn) in index.html (head portion), it is applied to all the chid components.
+
+app component can be used for scaffolding
+	like structure of the website
+		in every portions, just plug in the child components
+
+How to create a component?
+	ng g c signup
+	ng generate component signup
+		both commands are same
+
+creating a component, includes declaring it in the app.module.ts
+
+
+1) create an angular project
+2) create lot of components
+3) create a scaffolding in app component
+4) plug the components in various portions of the app component
+
+NOTICE the app.module.ts declarations that happen when you create a component.
+You should be able to delete a component and update app module also.
+
+If cmd prompt error does not refresh, use ctrl+c (only once).
+
+
+94880 29292
+
+
+github.com/jagasia
